@@ -20,8 +20,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbar"> <!-- Adicionado navbar-dark bg-dark aqui -->
                 <a href="/" class="navbar-brand">
                     <img src="/img/event-logo.png" alt="hdc events">
                 </a>
@@ -40,7 +40,6 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
 
     </header>

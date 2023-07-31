@@ -17,14 +17,18 @@ class EventController extends Controller
         return view('events.create');
     }
 
-    public function contacts()
+    public function store(Request $request)
     {
-        return view('events.contacts');
-    }
+        $event = new Event;
 
-    public function products()
-    {
-        return view('events.products');
+        $event->title = $request->title;
+        $event->city = $request->city;
+        $event->private = $request->private;
+        $event->description = $request->description;
+
+        $event->save();
+
+        return redirect('/');
     }
 
 }
